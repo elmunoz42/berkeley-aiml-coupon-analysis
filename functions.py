@@ -29,3 +29,29 @@ def plot_dataframe_missing_values(dataframe, filepath):
     # Show the plot
     plt.show()
     plt.savefig(filepath)
+
+def calculate_percentage_difference(value1, value2):
+    """
+    Calculate the percentage difference between two values using NumPy.
+    
+    Args:
+    value1 (float): First value
+    value2 (float): Second value
+    
+    Returns:
+    float: Percentage difference between the two values
+    """
+    return np.abs(value1 - value2) / np.mean([value1, value2]) * 100
+
+def calculate_percentage_change(original_value, new_value):
+    """
+    Calculate the percentage change between two values using NumPy.
+    
+    Args:
+    original_value (float): The original value
+    new_value (float): The new value
+    
+    Returns:
+    float: Percentage change from the original value to the new value
+    """
+    return (new_value - original_value) / original_value * 100
