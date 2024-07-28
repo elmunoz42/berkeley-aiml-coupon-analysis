@@ -55,3 +55,68 @@ def calculate_percentage_change(original_value, new_value):
     float: Percentage change from the original value to the new value
     """
     return (new_value - original_value) / original_value * 100
+
+def create_comparison_plot(data, conditions, title, note, filename, x_label='Acceptance Rate (COUPON_SUCCESS)', y_label='User Type', colors=["#FF9900", "#146EB4"]):
+    """
+    Create a comparison plot based on given conditions.
+    
+    Parameters:
+    data (pd.DataFrame): The dataframe containing the data
+    conditions (list): A list of two conditions for querying the dataframe
+    title (str): The title of the plot
+    note (str): Additional note to be added below the plot
+    filename (str): Name of the file to save the plot
+    x_label (str): Label for x-axis (default: 'Acceptance Rate (COUPON_SUCCESS)')
+    y_label (str): Label for y-axis (default: 'User Type')
+    colors (list): List of two colors for the bars (default: ["#FF9900", "#146EB4"])
+    """
+    # Query the dataframe to extract means based on conditions
+    success_rate_1 = data.query(conditions[0])[['COUPON_SUCCESS']].mean().values[0]
+    success_rate_2 = data.query(conditions[1])[['COUPON_SUCCESS']].mean().values[0]
+    
+    # Create a DataFrame for comparison
+    comparison_df = pd.DataFrame({
+        'USER_TYPE': ['Frequent', 'Infrequent'],
+        'COUPON_SUCCESS': [success_rate_1, success_rate_2]
+    })
+    
+    # Create a bar chart with Seaborn
+    plt.figure(figsize=(10, 6))
+    fig = sns.barplot(comparison_df, x='COUPON_SUCCESS', y='USER_TYPE', palette=colors, ci=None)
+    
+    # Set the title and labels
+    plt.title(title)
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    
+    # Add a note using Matplotlib's text function
+    plt.text(0.5, -0.15, note, horizontalalignment='center', verticalalignment='center', transform=plt.gca().transAxes)
+    
+    # Add values on the bars
+    for p in fig.patches:
+        fig.annotate(format(p.get_width(), '.2f'), 
+                     (p.get_x() + p.get_width(), p.get_y()), 
+                     xytext=(-30, -65), 
+                     textcoords='offset points')
+    
+    # Adjust layout
+    plt.tight_layout(pad=3.0)
+    plt.subplots_adjust(right=0.9)
+    
+    # Save plot
+    plt.savefig(f'images/plots/{filename}.jpg')
+    
+    # Show the plot
+    plt.show()
+
+# Example usage:
+# create_comparison_plot(
+#     data=data_only_cheap_restaurant_coupon,
+#     conditions=[
+#         "(RESTAURANT_LESS_THAN_20 == '4~8') | (RESTAURANT_LESS_THAN_20 == 'gt8')",
+#         "not ((RESTAURANT_LESS_THAN_20 == '4~8') | (RESTAURANT_LESS_THAN_20 == 'gt8'))"
+#     ],
+#     title='Fig5: Acceptance Rate for Cheap Restaurant Goers by Frequency',
+#     note='Note: Frequent users visit the restaurant 4 or more times a month.',
+#     filename='fig9'
+# )
