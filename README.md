@@ -96,7 +96,7 @@ The 'car' column on the other hand has more than 99% of data marked as null and 
 
 Additionally, I've standardized the titles to use snake case and all caps. Later in the analysis we'll use one hot encoding and the dummy columns will have all caps for the parent column name and Capitalized for the variant for example: "WEATHER_Snowy". This allows us to distinguish between original columns (in this case it was "WEATHER") and the variations thereof.
 
-Finally, the acceptance of a coupon by a driver was called the "Y" column and that has been changed to "COUPON_SUCCESS" to be more descriptive.
+Finally, the "passanger" column was corrected to "PASSENGER" and the acceptance of a coupon by a driver was called the "Y" column and that has been changed to "COUPON_SUCCESS" to be more descriptive.
 
 ### Initial Analysis
 
@@ -116,16 +116,16 @@ In summary, the narrower the black rectangle (error bar), the more predictable o
 
 The descriptive statistics point to the fact that the "Coffee House" coupons have by far the highest accepted coupon count 3996, but the mean coupon acceptance rate is the highest in the in the "Carry out & Take away" coupons. The lowest count of accepted coupons is the "Restaurant(20-50)" coupon for more expensive restaurants, the lowest mean is the Bar coupon. If a coupon type has a high acceptance rate but not a high count that might mean that there is a business opportunity to compete in that particular service. Conversely, the opposite might mean the market is saturated. The fact that the standard deviation is highest for the Coffee House coupon further illustrates how the count of successes is high but the ratio of success is lower, there is more variation in the results for this coupon than the others. This could be an area for further investigation to understand the factors contributing to this variability.
 
-| Stat  | Restaurant(<20) | Coffee House | Carry out & Take away | Bar         | Restaurant(20-50) |
-| ----- | --------------- | ------------ | --------------------- | ----------- | ----------------- |
-| count | 2786.000000     | 3996.000000  | 2393.000000           | 2017.000000 | 1492.000000       |
-| mean  | 0.707107        | 0.499249     | 0.735478              | 0.410015    | 0.441019          |
-| std   | 0.455171        | 0.500062     | 0.441170              | 0.491958    | 0.496676          |
-| min   | 0.000000        | 0.000000     | 0.000000              | 0.000000    | 0.000000          |
-| 25%   | 0.000000        | 0.000000     | 0.000000              | 0.000000    | 0.000000          |
-| 50%   | 1.000000        | 0.000000     | 1.000000              | 0.000000    | 0.000000          |
-| 75%   | 1.000000        | 1.000000     | 1.000000              | 1.000000    | 1.000000          |
-| max   | 1.000000        | 1.000000     | 1.000000              | 1.000000    | 1.000000          |
+| Stat  | Restaurant(<20) | Coffee House | Carry out & Take away | Bar      | Restaurant(20-50) |
+| ----- | --------------- | ------------ | --------------------- | -------- | ----------------- |
+| count | 2786            | 3996         | 2393                  | 2017     | 1492              |
+| mean  | 0.707107        | 0.499249     | 0.735478              | 0.410015 | 0.441019          |
+| std   | 0.455171        | 0.500062     | 0.441170              | 0.491958 | 0.496676          |
+| min   | 0.000000        | 0.000000     | 0.000000              | 0.000000 | 0.000000          |
+| 25%   | 0.000000        | 0.000000     | 0.000000              | 0.000000 | 0.000000          |
+| 50%   | 1.000000        | 0.000000     | 1.000000              | 0.000000 | 0.000000          |
+| 75%   | 1.000000        | 1.000000     | 1.000000              | 1.000000 | 1.000000          |
+| max   | 1.000000        | 1.000000     | 1.000000              | 1.000000 | 1.000000          |
 
 #### Next Steps: Areas of Interest for our Exploration of the Data
 
@@ -141,13 +141,13 @@ A good first step in analyzing different features of a dataset is to check for c
 
 #### Fig_10A: Correlation of Features with Inexpensive Restaurant Coupon Success for Frequent Goers
 
-This graph compares the correlation between features and the coupon success for users that are already frequent inexpensive restaurant goers. As you can see sunny weather correlates strongly with coupon usage. Conversely, if the coupon is received after 10pm at night it is a lot less likely to convert. Interestingly, if a driver is going the opposite direction they are more likely to want to use a coupon. This might be because the they are going the opposite way might have to do with having a passanger onboard, or running some errand and thus needed to make alternate plans for a meal since home is becoming further away as they go. But, this also gives us a clue at another way to explore the data which is to look at the correlations of features with eachother. Even though we are ultimately interested in the relationships that lead to coupon success, by exploring how features influence eachother we could discover combinations that have a stronger correlation coefficient to coupon success than a single feature alone.
+This graph compares the correlation between features and the coupon success for users that are already frequent inexpensive restaurant goers. As you can see sunny weather correlates strongly with coupon usage. Conversely, if the coupon is received after 10pm at night it is a lot less likely to convert. Interestingly, if a driver is going the opposite direction they are more likely to want to use a coupon. This might be because the they are going the opposite way might have to do with having a passenger onboard, or running some errand and thus needed to make alternate plans for a meal since home is becoming further away as they go. But, this also gives us a clue at another way to explore the data which is to look at the correlations of features with eachother. Even though we are ultimately interested in the relationships that lead to coupon success, by exploring how features influence eachother we could discover combinations that have a stronger correlation coefficient to coupon success than a single feature alone.
 
 !['Fig_10B'](images/plots/fig10B.jpg)
 
 #### Fig_10B: Correlation Heatmap for Inexpensive Restaurant Coupon Success for Frequent Goers
 
-This is a different visualization for the same population as Fib_10A. If we look at the above correlations we can see that the strongest correlations are obvious negative ones. For example PASSANGER_Friend(s) and PASSANGER_Alone are mutually exclusive, it isn't possible to have selected both. Hence they are dark blue.
+This is a different visualization for the same population as Fib_10A. If we look at the above correlations we can see that the strongest correlations are obvious negative ones. For example passenger_Friend(s) and passenger_Alone are mutually exclusive, it isn't possible to have selected both. Hence they are dark blue.
 
 Now for the more interesting patterns you see that when a driver has a kid(s) or a friend(s) in their car they are more likely to be going away from their house. Perhaps the reason to be driving away from home is to give them a ride to a destination or for an outing together. Additionally, it is more likely than not that the weather would be sunny under those conditions, since these values correlate with eachother. This leads us to a valuable business insight. There is a powerful combination of factors when its sunny, you have friend or kids in the car and you are going away from home, perhaps for a fun outing that deserves celebration at an inexpensive restaurant. Whatever the exact reasons might be (soccer practice commute, errand, theme park outing etc. ) there could be value in targetting drivers in this particular predicament with context appropriate personalized messaging.
 
@@ -155,7 +155,7 @@ One additional note is that the most popular times for coupon acceptance is 2pm 
 
 !['Fig_11A'](images/plots/fig11A.jpg)
 
-#### Fig_11A: Correlation Heatmap for Bar Coupon Success for Frequent Bar-Goers
+#### Fig_11A: Correlation of Features for Bar Coupon Success for Frequent Bar-Goers
 
 This figure examines the correlation coefficients for frequent bar-goers to assess their conversion rates under various conditions. As you can see, age plays a significant role. Drivers aged 21 and 26 are much more likely to convert. This trend changes dramatically for drivers in their 30s. Interestingly, the direction of travel has a different impact compared to the Restaurant(<20) coupons we previously reviewed. Drivers are much more likely to visit a bar if it’s on their route. Conversely, the likelihood of visiting a bar decreases if they are alone. If they are alone, there is a positive correlation with accepting the bar coupon. We will further query the data to explore these relationships in greater depth.
 
@@ -173,6 +173,24 @@ In the queries section later in this report, we will conduct a deeper exploratio
 
 - Discuss the correlation matrix for the Bar, Inexpensive Restaurant, and Coffee House coupons.
 - Deep dive into the bar coupons and specific populations. Discuss how their coupon acceptance ratio differs from other users.
+
+!['Fig_12A'](images/plots/fig12A.jpg)
+
+#### Fig_12A: Correlation of Features for Coffee House Coupon Success for Frequent Goers
+
+As you might expect, coupons are much more likely to be successful at 10am in the morning than at 10pm at night. Many people find the effects of coffee to be beneficial at the start of the day and detrimental at night, so this is not surprising.
+
+For this coupon, having your partner present in your car has a higher positive correlation than any other passenger. Being alone is negatively correlated with accepting the coupon.
+
+Weather does seem to play a role, with sunny weather being the most favorable to coupon success.
+
+!['Fig_12B'](images/plots/fig12B.jpg)
+
+#### Fig_12B: Correlation Heatmap for Frequent Coffee House Goers
+
+As observed earlier, the success of a coupon correlates positively with instances where drivers have a partner in the car. Interestingly, this scenario also correlates with the time being 10am. This suggests a potent combination of factors that could enhance the likelihood of coupon acceptance.
+
+Moreover, sunny weather appears to correlate positively with coupon acceptance. This correlation is also observed when one or more friends are present in the car. This combination of factors seems to contribute significantly to the success of the coffee shop coupon. These insights could be instrumental in strategizing effective coupon campaigns.
 
 ## 5. Findings
 
