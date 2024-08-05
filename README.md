@@ -315,6 +315,20 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 - Interpret the descriptive and inferential statistics in a concise manner.
 - Highlight actionable items in their own section.
 
+### Summary of Findings on Coupon Acceptance (Figures 3 and 4)
+
+The analysis of the data reveals several key insights about the acceptance of coupons under different conditions:
+
+- Temperature and Coupon Acceptance: As observed in Fig_3, the highest temperature of 80 degrees resulted in more than twice the coupon adoption. This suggests that warmer temperatures may influence the likelihood of coupon acceptance.
+
+- Coupon Acceptance in High Temperatures: In Fig_4, it was found that the inexpensive restaurant ("Restaurant(<20)") and the "Carry out & Take Away" coupons are the most popular in high heat conditions. Surprisingly, the Bar coupon also showed strong performance. This could indicate that people may prefer not to cook in a hot kitchen and would rather be in a temperature-controlled restaurant or opt for takeout.
+
+- Time of Day and Coupon Acceptance: The success of inexpensive restaurant coupons correlates with the 2pm and 6pm time slots, which are typically the hottest times of the day. This suggests that the temperature might just be a byproduct of the time of day, or vice versa.
+
+- Effectiveness of Coupons: The data shows that coupons are particularly effective on hot days, especially for carryout and inexpensive restaurants. However, the data does not provide a definitive explanation for these two coupons’ exceptional performance or the causation of the high heat coupon success.
+
+In conclusion, these findings provide valuable insights into the factors influencing coupon acceptance and demonstrate how we can drill down on certain features for further analysis. While the actual reasons for these patterns are not definitively explained by the data, the observations suggest potential areas for further investigation and strategic focus in coupon-based marketing strategies.
+
 ### Findings About Bar Coupons as it Relates to Frequent and Infrequent Bar-Goers (Figure 5 Series)
 
 The analysis reveals distinct patterns in the behavior of "Frequent" and "Infrequent" bar-goers. "Frequent" users demonstrate a significantly higher coupon acceptance rate of 77%, compared to 37% for "Infrequent" users. This suggests that "Frequent" users are more receptive to coupons, making them a valuable target segment for marketing strategies.
@@ -331,20 +345,23 @@ In conclusion, understanding the distinct behaviors of "Frequent" and "Infrequen
 
 The analysis of the data reveals several key insights about the coupon acceptance behavior of "Frequent Young Bar Goers" compared to other users:
 
-Higher Acceptance Rate: "Casual Young Bar Goers" have a significantly higher coupon acceptance rate of 67%. This suggests that younger, casual bar-goers are more receptive to coupons, which could be a valuable insight for tailoring marketing strategies.
-Less Variability in Responses: The violin plot shows that "Casual Young Users" not only have a higher success rate but also exhibit less variability in their responses. This indicates a more predictable behavior pattern among "Casual Young Users" when it comes to coupon acceptance.
-Smaller Cohort: Despite their higher acceptance rate, "Casual Young Users" form a smaller cohort, making up only 8.7% of the total users who receive bar coupons. This suggests that there might be an opportunity to expand the distribution of coupons to this demographic.
+- Higher Acceptance Rate: "Casual Young Bar Goers" have a significantly higher coupon acceptance rate of 67%. This suggests that younger, casual bar-goers are more receptive to coupons, which could be a valuable insight for tailoring marketing strategies.
+
+- Less Variability in Responses: The violin plot shows that "Casual Young Users" not only have a higher success rate but also exhibit less variability in their responses. This indicates a more predictable behavior pattern among "Casual Young Users" when it comes to coupon acceptance.
+
+- Smaller Cohort: Despite their higher acceptance rate, "Casual Young Users" form a smaller cohort, making up only 8.7% of the total users who receive bar coupons. This suggests that there might be an opportunity to expand the distribution of coupons to this demographic.
+
 In conclusion, these findings highlight the potential of targeting "Casual Young Bar Goers" with coupons, given their higher acceptance rate and less variability in responses. Further research could explore the specific factors influencing these behaviors to optimize coupon design and distribution strategies.
 
 ### Findings on Bar Coupon Acceptance Among Frequent Bar-Goers with Non-Kid Passengers (Figure 7 Series)
 
 The analysis of the data reveals several key insights about the coupon acceptance behavior of "Frequent Users w/ Non Kid Passenger" compared to other users:
 
-Higher Acceptance Rate: "Frequent Users w/ Non Kid Passenger" have a significantly higher coupon acceptance rate. This suggests that the presence of a non-kid passenger influences the likelihood of frequent users accepting a coupon, which could be a valuable insight for tailoring marketing strategies.
+- Higher Acceptance Rate: "Frequent Users w/ Non Kid Passenger" have a significantly higher coupon acceptance rate. This suggests that the presence of a non-kid passenger influences the likelihood of frequent users accepting a coupon, which could be a valuable insight for tailoring marketing strategies.
 
-Less Variability in Responses: The violin plot shows that "Casual w/ Passenger" users not only have a higher success rate but also exhibit less variability in their responses. This indicates a more predictable behavior pattern among "Casual w/ Passenger" users when it comes to coupon acceptance.
+- Less Variability in Responses: The violin plot shows that "Casual w/ Passenger" users not only have a higher success rate but also exhibit less variability in their responses. This indicates a more predictable behavior pattern among "Casual w/ Passenger" users when it comes to coupon acceptance.
 
-Smaller Cohort: Despite their higher acceptance rate, "Casual w/ Passenger" users form a smaller cohort, making up only 9.7% of the total users who receive bar coupons. This suggests that there might be an opportunity to expand the distribution of coupons to this demographic.
+- Smaller Cohort: Despite their higher acceptance rate, "Casual w/ Passenger" users form a smaller cohort, making up only 9.7% of the total users who receive bar coupons. This suggests that there might be an opportunity to expand the distribution of coupons to this demographic.
 
 In conclusion, these findings highlight the potential of targeting "Frequent Users w/ Non Kid Passenger" with coupons, given their higher acceptance rate and less variability in responses. Further research could explore the specific factors influencing these behaviors to optimize coupon design and distribution strategies. This analysis provides valuable insights into the factors influencing coupon acceptance.
 
@@ -352,7 +369,18 @@ In conclusion, these findings highlight the potential of targeting "Frequent Use
 
 User types and certain characteristics, such as age and income level, appear to significantly influence the likelihood of accepting a bar coupon. These insights can be instrumental in tailoring effective coupon-based marketing strategies to target different user groups. Further research could explore these relationships in more depth to optimize coupon design and distribution.
 
-###
+### Findings Coupon Acceptance Among Inexpensive Restaurant Goers (Figure 9 Series)
+
+The analysis of the data reveals several key insights about the coupon acceptance behavior of inexpensive restaurant goers:
+
+- Frequency of Visits: Frequent users have a slightly higher acceptance rate compared to infrequent users, as shown in Fig_9A. This suggests that users who frequently visit inexpensive restaurants are more receptive to coupons.
+
+- User Cohort Size: Despite having a higher acceptance rate, frequent users form a smaller cohort, making up only 39.1% of the total users, while infrequent users make up the majority with 60.9%, as depicted in Fig_9B.
+  Overall Coupon Success: Even though frequent users accept coupons at a higher success rate, the larger cohort of infrequent restaurant goers has the highest amount of overall coupon success, even if their individual rate of success is lower. This is illustrated in Fig_9C.
+
+- Impact of Having Friends Onboard: The average acceptance rate for drivers with friends onboard is 5% higher, confirming the observations from the Correlation Matrix Heatmap. This is demonstrated in Fig_9D and suggests that the social context (having friends onboard) influences the likelihood of accepting a coupon.
+
+In conclusion, these findings highlight the potential of targeting both frequent and infrequent inexpensive restaurant goers with coupons, given their respective acceptance rates and cohort sizes. The presence of friends also appears to be a significant factor in coupon acceptance. Further research could explore these relationships in more depth to optimize coupon design and distribution strategies.
 
 ## 6. Conclusion and Recommendations
 
