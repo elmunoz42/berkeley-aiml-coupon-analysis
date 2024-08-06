@@ -319,12 +319,24 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 
 #### Problems We are Evaluation:
 
-1. How do different factors affect coupon acceptance for the "Bar" coupon acceptance rate? Can we find any correlations?
-2. How do different factors affect coupon acceptance for the "Restaurant(<20)" coupon acceptance rate? Can we find any correlations?
-3. How do different factors affect coupon acceptance for the "Coffee House" coupon acceptance rate? Can we find any correlations?
-4. How does heat affect coupon acceptance for different types of coupons?
+A. How does temperature affect coupon acceptance for different types of coupons?
+B. How do different factors affect coupon acceptance for the "Restaurant(<20)" coupon acceptance rate? Can we find any correlations?
+C. How do different factors affect coupon acceptance for the "Bar" coupon acceptance rate? Can we find any correlations?
+D. How do different factors affect coupon acceptance for the "Coffee House" coupon acceptance rate? Can we find any correlations?
 
-### Summary of Findings of Correlation Plots for the "Restaurant(<20)" Coupon for Frequent Inexpensive Restaurant Goers (Fig_10A and Fig_10B)
+### A: Summary of Findings on Coupon Acceptance in Relation to the Temperature Feature (Figures 3 and 4)
+
+The analysis of the data reveals several key insights about the acceptance of coupons under different conditions:
+
+- Temperature and Coupon Acceptance: As observed in Fig_3, the highest temperature of 80 degrees resulted in more than twice the coupon adoption. This suggests that warmer temperatures may influence the likelihood of coupon acceptance.
+
+- Coupon Acceptance in High Temperatures: In Fig_4, it was found that the inexpensive restaurant ("Restaurant(<20)") and the "Carry out & Take Away" coupons are the most popular in high heat conditions. This could indicate that people may prefer not to cook in a hot kitchen and would rather be in a temperature-controlled restaurant or opt for takeout. Surprisingly, the Bar coupon did not show strong performance.
+
+- Time of Day and Coupon Acceptance: The success of inexpensive restaurant coupons correlates with the 2pm and 6pm time slots, which are typically the hottest times of the day. This suggests that the temperature might just be a byproduct of the time of day, or vice versa. More on the research would be needed to determine causality.
+
+In conclusion, the data shows that coupons are particularly effective on hot days. While the actual reasons for these patterns are not definitively explained by the data, the observations suggest potential areas for further investigation and strategic focus in coupon-based marketing strategies.
+
+### B: Summary of Findings of Correlation Plots for the "Restaurant(<20)" Coupon for Frequent Inexpensive Restaurant Goers (Fig_10A and Fig_10B)
 
 - Sunny weather has a strong positive correlation with coupon usage.
 
@@ -340,7 +352,7 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 
 - The most popular times for coupon acceptance are 2pm and 6pm, possibly aligning with meal times or end of work hours.
 
-### Summary of Findings of Correlation Plots for the "Bar" Coupon for Frequent Bar-Goers (Fig_11A and Fig_11B)
+### C: Summary of Findings of Correlation Plots for the "Bar" Coupon for Frequent Bar-Goers (Fig_11A and Fig_11B)
 
 - Age plays a significant role in coupon conversion rates for frequent bar-goers. Drivers aged 21 and 26 are more likely to use a bar coupon, but this trend changes for drivers in their 30s.
 
@@ -352,31 +364,7 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 
 - If a driver is 26 years old, they are more likely to receive the coupon at 10pm at night. However, the coupon acceptance rate at this time is lower than usual.
 
-### Summary of Findings of Correlation Plots for Coffee House Coupon for Frequent Coffee House Goers(Fig_12A and Fig_12B)
-
-- Coffee house coupons are more likely to be successful at 10am in the morning than at 10pm at night, aligning with common coffee consumption habits.
-
-- Having a partner present in the car has a higher positive correlation with accepting the coffee house coupon than any other passenger. Being alone is negatively correlated with accepting the coupon.
-
-- Sunny weather is the most favorable condition for coffee house coupon success.
-
-- The success of a coffee house coupon correlates positively with instances where drivers have a partner in the car and the time is 10am, suggesting a potent combination of factors that could enhance the likelihood of coupon acceptance.
-
-- Sunny weather and having one or more friends in the car also contribute significantly to the success of the coffee house coupon. These insights could thus also be useful in strategizing effective coupon campaigns.
-
-### Summary of Findings on Coupon Acceptance in Relation to the Temperature Feature (Figures 3 and 4)
-
-The analysis of the data reveals several key insights about the acceptance of coupons under different conditions:
-
-- Temperature and Coupon Acceptance: As observed in Fig_3, the highest temperature of 80 degrees resulted in more than twice the coupon adoption. This suggests that warmer temperatures may influence the likelihood of coupon acceptance.
-
-- Coupon Acceptance in High Temperatures: In Fig_4, it was found that the inexpensive restaurant ("Restaurant(<20)") and the "Carry out & Take Away" coupons are the most popular in high heat conditions. This could indicate that people may prefer not to cook in a hot kitchen and would rather be in a temperature-controlled restaurant or opt for takeout. Surprisingly, the Bar coupon did not show strong performance.
-
-- Time of Day and Coupon Acceptance: The success of inexpensive restaurant coupons correlates with the 2pm and 6pm time slots, which are typically the hottest times of the day. This suggests that the temperature might just be a byproduct of the time of day, or vice versa. More on the research would be needed to determine causality.
-
-In conclusion, the data shows that coupons are particularly effective on hot days. While the actual reasons for these patterns are not definitively explained by the data, the observations suggest potential areas for further investigation and strategic focus in coupon-based marketing strategies.
-
-### Findings About Bar Coupons as it Relates to Frequent and Infrequent Bar-Goers (Figure 5 Series)
+#### Findings About Bar Coupons as it Relates to Frequent and Infrequent Bar-Goers (Figure 5 Series)
 
 The analysis reveals distinct patterns in the behavior of "Frequent" and "Infrequent" bar-goers. "Frequent" users demonstrate a significantly higher coupon acceptance rate of 77%, compared to 37% for "Infrequent" users. This suggests that "Frequent" users are more receptive to coupons, making them a valuable target segment for marketing strategies.
 
@@ -388,7 +376,7 @@ On the other hand, "Infrequent" users show more variability in their responses a
 
 In conclusion, understanding the distinct behaviors of "Frequent" and "Infrequent" users can provide valuable insights for tailoring effective coupon-based marketing strategies. Further research could explore the specific factors influencing these behaviors to optimize coupon design and distribution.
 
-### Findings on Bar Coupon Acceptance Among Frequent Young Bar Goers (Figure 6 Series)
+#### Findings on Bar Coupon Acceptance Among Frequent Young Bar Goers (Figure 6 Series)
 
 The analysis of the data reveals several key insights about the coupon acceptance behavior of "Frequent Young Bar Goers" compared to other users:
 
@@ -400,7 +388,7 @@ The analysis of the data reveals several key insights about the coupon acceptanc
 
 In conclusion, these findings highlight the potential of targeting "Casual Young Bar Goers" with coupons, given their higher acceptance rate and less variability in responses. Further research could explore the specific factors influencing these behaviors to optimize coupon design and distribution strategies.
 
-### Findings on Bar Coupon Acceptance Among Frequent Bar-Goers with Non-Kid Passengers (Figure 7 Series)
+#### Findings on Bar Coupon Acceptance Among Frequent Bar-Goers with Non-Kid Passengers (Figure 7 Series)
 
 The analysis of the data reveals several key insights about the coupon acceptance behavior of "Frequent Users w/ Non Kid Passenger" compared to other users:
 
@@ -412,11 +400,23 @@ The analysis of the data reveals several key insights about the coupon acceptanc
 
 In conclusion, these findings highlight the potential of targeting "Frequent Users w/ Non Kid Passenger" with coupons, given their higher acceptance rate and less variability in responses. Further research could explore the specific factors influencing these behaviors to optimize coupon design and distribution strategies. This analysis provides valuable insights into the factors influencing coupon acceptance.
 
-### Findings on Bar Coupon Acceptance Among Different User Types (Figure 8)
+#### Findings on Bar Coupon Acceptance Among Different User Types (Figure 8)
 
 User types and certain characteristics, such as age and income level, appear to significantly influence the likelihood of accepting a bar coupon. These insights can be instrumental in tailoring effective coupon-based marketing strategies to target different user groups. Further research could explore these relationships in more depth to optimize coupon design and distribution.
 
-### Findings Coupon Acceptance Among Inexpensive Restaurant Goers (Figure 9 Series)
+### D: Summary of Findings of Correlation Plots for Coffee House Coupon for Frequent Coffee House Goers(Fig_12A and Fig_12B)
+
+- Coffee house coupons are more likely to be successful at 10am in the morning than at 10pm at night, aligning with common coffee consumption habits.
+
+- Having a partner present in the car has a higher positive correlation with accepting the coffee house coupon than any other passenger. Being alone is negatively correlated with accepting the coupon.
+
+- Sunny weather is the most favorable condition for coffee house coupon success.
+
+- The success of a coffee house coupon correlates positively with instances where drivers have a partner in the car and the time is 10am, suggesting a potent combination of factors that could enhance the likelihood of coupon acceptance.
+
+- Sunny weather and having one or more friends in the car also contribute significantly to the success of the coffee house coupon. These insights could thus also be useful in strategizing effective coupon campaigns.
+
+#### Findings Coupon Acceptance Among Inexpensive Restaurant Goers (Figure 9 Series)
 
 The analysis of the data reveals several key insights about the coupon acceptance behavior of inexpensive restaurant goers:
 
@@ -443,15 +443,15 @@ User Types and Passenger Types: The performance of the Bar coupon especially was
 Social Context: The presence of friends onboard appears to be a significant factor in coupon acceptance.
 Based on these findings, the following recommendations can be made:
 
+### Marketing Strategy Recommendations for Inexpensive Restaurant Coupons:
+
+- Sunny weather and kid(s) or friend(s) in the car are great opportunities for coupon success especially when targeted to frequent inexpensive restaurant goers.
+
 ### Marketing Strategy Recommendations for Bar Coupons:
 
 - Tailor marketing strategies to target frequent young bar-goers in the afternoon and evenenings.
 
 - When people are alone they are more likely to convert, perhaps because they are looking to socialize. Therefore, dramatizing the social aspect of the bar experience might be advisable.
-
-### Marketing Strategy Recommendations for Inexpensive Restaurant Coupons:
-
-- Sunny weather and kid(s) or friend(s) in the car are great opportunities for coupon success especially when targeted to frequent inexpensive restaurant goers.
 
 ### Marketing Strategy Recommendations for Coffee House Coupons:
 
