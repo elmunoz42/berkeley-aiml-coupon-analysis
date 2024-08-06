@@ -320,8 +320,11 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 #### Problems We are Evaluation:
 
 A. How does temperature affect coupon acceptance for different types of coupons?
+
 B. How do different factors affect coupon acceptance for the "Restaurant(<20)" coupon acceptance rate? Can we find any correlations?
+
 C. How do different factors affect coupon acceptance for the "Bar" coupon acceptance rate? Can we find any correlations?
+
 D. How do different factors affect coupon acceptance for the "Coffee House" coupon acceptance rate? Can we find any correlations?
 
 ### A: Summary of Findings on Coupon Acceptance in Relation to the Temperature Feature (Figures 3 and 4)
