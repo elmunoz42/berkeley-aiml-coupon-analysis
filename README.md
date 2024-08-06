@@ -12,6 +12,8 @@ To unravel these complexities, we embark on an exploratory journey through a ric
 
 Our analysis employs a systematic approach, beginning with a comparative study of different coupons using bar plots. This visual exploration aids in discerning patterns and trends across coupon types. We then delve deeper, constructing a correlation matrix for coupon types to iEarly morning sunny days, especially when your partner is in the car, are prime times for coupon acceptance. Specifically targeting these conditions for coffee house lovers might just result in a winning campaign.dentify potential areas of interest. Finally, we perform targeted comparisons by querying the data, investigating how different combinations of features influence the coupon acceptance ratio. Some of the tools we'll use are descriptive statistics, one hot encoding, correlation heatmaps, pandas dataframe queries, and violin plots.
 
+[This exploration was performed in this Jupyter Notebook. There you will find the Python source code for all the graphs in this report.](https://github.com/elmunoz42/berkeley-aiml-coupon-analysis/blob/main/prompt.ipynb)
+
 This project not only aims to distinguish between customers who accepted a driving coupon versus those who did not, but also seeks to provide insights that could inform targeted marketing strategies and enhance customer engagement. The findings from this analysis will be presented in a comprehensive report, highlighting key insights and actionable recommendations.
 
 It is important to note that much more analysis is possible with this dataset. We had to make choices and explore certain scenarios in depth but not others. Specifically, we only looked at the Coffee House, Restaurant(<20) and Bar coupons. With a deeper dive on the Bar coupon.
