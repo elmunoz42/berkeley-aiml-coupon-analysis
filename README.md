@@ -315,6 +315,32 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 - Interpret the descriptive and inferential statistics in a concise manner.
 - Highlight actionable items in their own section.
 
+### Summary of Findings of Correlation Plots (Figures 10A and 10B)
+
+- Sunny weather has a strong positive correlation with coupon usage.
+- Coupons received after 10pm are less likely to be used.
+- If a driver is going in the opposite direction of their home, they are more likely to use a coupon. This could be due to having a passenger onboard or running errands that make home further away.
+- Passenger_Friend(s) and Passenger_Alone are mutually exclusive, hence the strong negative correlation.
+- When a driver has kid(s) or friend(s) in their car, they are more likely to be going away from home. This could be due to giving them a ride or going for an outing together.
+- It’s more likely to be sunny when the driver has friends or kids in the car and is going away from home. This combination of factors could be a valuable target for personalized messaging.
+- The most popular times for coupon acceptance are 2pm and 6pm, possibly aligning with meal times or end of work hours.
+
+### Summary of Findings of Correlation Plots (Figures 11A and 11B)
+
+- Age plays a significant role in coupon conversion rates for frequent bar-goers. Drivers aged 21 and 26 are more likely to use a bar coupon, but this trend changes for drivers in their 30s.
+- The direction of travel impacts the likelihood of visiting a bar. Drivers are more likely to visit a bar if it’s on their route.
+- If drivers are alone, they are more likely to accept a bar coupon.
+  Drivers aged 50 or above are more likely to have a child in the car, which decreases the likelihood of them accepting a coupon.
+- If a driver is 26 years old, they are more likely to receive the coupon at 10pm at night. However, the coupon acceptance rate at this time is lower than usual.
+
+### Summary of Findings of Correlation Plots (Figures 12A and 12B)
+
+- Coffee house coupons are more likely to be successful at 10am in the morning than at 10pm at night, aligning with common coffee consumption habits.
+- Having a partner present in the car has a higher positive correlation with accepting the coffee house coupon than any other passenger. Being alone is negatively correlated with accepting the coupon.
+- Sunny weather is the most favorable condition for coffee house coupon success.
+- The success of a coffee house coupon correlates positively with instances where drivers have a partner in the car and the time is 10am, suggesting a potent combination of factors that could enhance the likelihood of coupon acceptance.
+- Sunny weather and having one or more friends in the car also contribute significantly to the success of the coffee house coupon. These insights could thus also be useful in strategizing effective coupon campaigns.
+
 ### Summary of Findings on Coupon Acceptance (Figures 3 and 4)
 
 The analysis of the data reveals several key insights about the acceptance of coupons under different conditions:
