@@ -10,7 +10,7 @@ This project delves into the intriguing question of what influences a driver's d
 
 To unravel these complexities, we embark on an exploratory journey through a rich dataset sourced from the [UCI Machine Learning repository, collected via a survey on Amazon Mechanical Turk.](https://archive.ics.uci.edu/dataset/603/in+vehicle+coupon+recommendation) The survey captures a variety of driving scenarios and the driver's decision to accept or reject a coupon under those circumstances.
 
-Our analysis employs a systematic approach, beginning with a comparative study of different coupons using bar plots. This visual exploration aids in discerning patterns and trends across coupon types. We then delve deeper, constructing a correlation matrix for coupon types to identify potential areas of interest. Finally, we perform targeted comparisons by querying the data, investigating how different combinations of features influence the coupon acceptance ratio. Some of the tools we'll use are descriptive statistics, one hot encoding, correlation heatmaps, pandas dataframe queries, and violin plots.
+Our analysis employs a systematic approach, beginning with a comparative study of different coupons using bar plots. This visual exploration aids in discerning patterns and trends across coupon types. We then delve deeper, constructing a correlation matrix for coupon types to iEarly morning sunny days, especially when your partner is in the car, are prime times for coupon acceptance. Specifically targeting these conditions for coffee house lovers might just result in a winning campaign.dentify potential areas of interest. Finally, we perform targeted comparisons by querying the data, investigating how different combinations of features influence the coupon acceptance ratio. Some of the tools we'll use are descriptive statistics, one hot encoding, correlation heatmaps, pandas dataframe queries, and violin plots.
 
 This project not only aims to distinguish between customers who accepted a driving coupon versus those who did not, but also seeks to provide insights that could inform targeted marketing strategies and enhance customer engagement. The findings from this analysis will be presented in a comprehensive report, highlighting key insights and actionable recommendations.
 
@@ -315,6 +315,13 @@ In this graph we can see that the average acceptance rate (or Coupon Success) fo
 
 ## 5. Findings
 
+#### Problems We are Evaluation:
+
+1. How do different factors affect coupon acceptance for the "Bar" coupon acceptance rate? Can we find any correlations?
+2. How do different factors affect coupon acceptance for the "Restaurant(<20)" coupon acceptance rate? Can we find any correlations?
+3. How do different factors affect coupon acceptance for the "Coffee House" coupon acceptance rate? Can we find any correlations?
+4. How does heat affect coupon acceptance for different types of coupons?
+
 ### Summary of Findings of Correlation Plots for the "Restaurant(<20)" Coupon for Frequent Inexpensive Restaurant Goers (Fig_10A and Fig_10B)
 
 - Sunny weather has a strong positive correlation with coupon usage.
@@ -434,21 +441,21 @@ User Types and Passenger Types: The performance of the Bar coupon especially was
 Social Context: The presence of friends onboard appears to be a significant factor in coupon acceptance.
 Based on these findings, the following recommendations can be made:
 
-### Marketing Strategy Suggestions for Bar Coupons:
+### Marketing Strategy Recommendations for Bar Coupons:
 
 - Tailor marketing strategies to target frequent young bar-goers in the afternoon and evenenings.
 
 - When people are alone they are more likely to convert, perhaps because they are looking to socialize. Therefore, dramatizing the social aspect of the bar experience might be advisable.
 
-### Marketing Strategy Suggestions for Inexpensive Restaurant Coupons:
+### Marketing Strategy Recommendations for Inexpensive Restaurant Coupons:
 
 - Sunny weather and kid(s) or friend(s) in the car are great opportunities for coupon success especially when targeted to frequent inexpensive restaurant goers.
 
-### Marketing Strategy Suggestions for Coffee House Coupons:
+### Marketing Strategy Recommendations for Coffee House Coupons:
 
 - Early morning sunny days, especially when your partner is in the car, are prime times for coupon acceptance. Specifically targeting these conditions for coffee house lovers might just result in a winning campaign.
 
-### Other suggestions:
+### Other Recommendations:
 
 - Expand Coupon Distribution: Consider expanding the distribution of coupons to both frequent and infrequent inexpensive restaurant goers, given their respective acceptance rates and cohort sizes. Frequent goers of a given coupon establishment type convert at a higher rate but are significantly lower in numbers. It could also be a strategy to just advertise to as many people as possible, if the cost of advertisement is low.
 
