@@ -1,6 +1,6 @@
 # Will a Customer Accept the Coupon?
 
-## Harnessing the Power of BI Analytics: An Exploration using Correlation Matrices, Python DataFrame Queries and Visualization Tools
+## Harnessing the Power of BI Analytics: An Exploration using Correlation Matrices, Python DataFrame Queries and Seaborn Visualization Plots
 
 ## 1. Introduction
 
@@ -76,7 +76,7 @@ The key question of this data analysis is "Will a Customer Accept the Coupon?" a
 
 #### Dimensionality of the Data Set
 
-The dataset under examination comprises 12,684 samples and 26 distinct features, providing a robust foundation for comprehensive analysis. The features are a mix of categorical and integer types. The majority of features have categorical data, which will at some points present issues that warrant the use of one hot encode.
+The dataset under examination comprises 12,684 samples and 26 distinct features, providing a robust foundation for comprehensive analysis. The features are a mix of categorical and integer types. The majority of features have categorical data, which will at some points present issues that warrant the use of one hot encoding.
 
 The dataset’s multivariate nature allows for the investigation of relationships between multiple variables simultaneously, thereby enabling a more nuanced understanding of the underlying patterns. Given the substantial number of instances and the variety of features, this dataset provides ample opportunities for thorough exploration and analysis in the realm of business intelligence.
 
