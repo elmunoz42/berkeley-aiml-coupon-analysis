@@ -224,7 +224,7 @@ As evident from this bar plot, the acceptance rate for frequent bar-goers is sig
 
 This violin plot compares the "COUPON_SUCCESS" between "Frequent" and "Infrequent" users. The plot shows that "Frequent" users generally have a higher success rate (closer to 1), with a narrower distribution indicating less variability in their responses. On the other hand, "Infrequent" users show a wider distribution of success rates, with a peak closer to 0, indicating more variability and generally lower success rates.
 
-### Note about IQR:
+##### Note about IQR:
 
 The central rectangular black bar of each violin plot represents the Interquartile Range. The Interquartile Range (IQR) is a measure of statistical dispersion, or in simpler terms, it’s a measure of how spread out the values in a data set are around the median.
 
@@ -387,6 +387,19 @@ In conclusion, these findings highlight the potential of targeting both frequent
 - Summarize the key findings from your analysis.
 - Provide recommendations based on your findings.
 - Discuss potential next steps or further analyses that could be done.
+
+The analysis of the data has revealed several key insights about the acceptance of coupons under different conditions, across various user types, and in relation to specific user characteristics. Here are the summarized key findings:
+
+Temperature and Time of Day: Warmer temperatures and specific times of the day (2pm and 6pm) appear to influence the likelihood of coupon acceptance.
+Coupon Type and User Behavior: Certain types of coupons, such as those for inexpensive restaurants and carry out & take away services, are more popular in high heat conditions.
+User Types: Frequent users, young bar-goers, and users with non-kid passengers have a higher coupon acceptance rate. However, these groups form a smaller cohort of the total users, suggesting an opportunity to expand the distribution of coupons to these demographics.
+Social Context: The presence of friends onboard appears to be a significant factor in coupon acceptance.
+Based on these findings, the following recommendations can be made:
+
+Target Marketing Strategies: Tailor marketing strategies to target frequent users, young bar-goers, and users with non-kid passengers, given their higher acceptance rates.
+Expand Coupon Distribution: Consider expanding the distribution of coupons to frequent and infrequent inexpensive restaurant goers, given their respective acceptance rates and cohort sizes.
+Optimize Coupon Design: Further research could explore these relationships in more depth to optimize coupon design and distribution strategies.
+As for potential next steps or further analyses, it would be beneficial to investigate the specific factors influencing these behaviors. For instance, understanding why certain types of coupons are more popular in high heat conditions could inform the design of future coupons. Additionally, exploring why the presence of friends onboard influences the likelihood of accepting a coupon could provide insights into the social dynamics at play. These investigations could ultimately lead to more effective and targeted coupon-based marketing strategies.
 
 ## 7. References
 
