@@ -347,8 +347,6 @@ In conclusion, the data shows that coupons are particularly effective on hot day
 
 - If a driver is going in the opposite direction of their destination, they are more likely to use a coupon. This could be due to having a passenger onboard or running errands that make the destination (possibly home) further away.
 
-- Passenger_Friend(s) and Passenger_Alone are mutually exclusive, hence the strong negative correlation.
-
 - When a driver has kid(s) or friend(s) in their car, they are more likely to be going away from the destination. This could be due to giving them a ride or going for an outing together.
 
 - It’s more likely to be sunny when the driver has friends or kids in the car and is going away from their destination. This combination of factors could be a valuable target for personalized messaging.
